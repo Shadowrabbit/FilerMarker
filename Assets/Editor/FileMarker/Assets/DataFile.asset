@@ -16,4 +16,12 @@ MonoBehaviour:
   - assetName: FileMarkerDef
     mark: 
   - assetName: FileMarkerData
-    mark: '  '
+    mark: //
+  - assetName: FileMarkerModel
+    mark: //
+  - assetName: UILogic
+    mark: //
+  - assetName: FileMarkerController
+    mark: 
+  - assetName: FileMarker
+    mark: "\u5996\u68A6"

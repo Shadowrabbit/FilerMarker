@@ -25,7 +25,7 @@ namespace FileMarker
 
         private void OnValidate()
         {
-            Fetch();
+            //Fetch();
         }
 
         private void Reset()

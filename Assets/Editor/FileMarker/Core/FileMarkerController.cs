@@ -33,8 +33,6 @@ namespace FileMarker
             ProjectWaitMarkStyle.normal.textColor = FileMarkerDef.BilibiliBlue;
             EditorApplication.projectWindowItemOnGUI += ProjectWindowItemOnGUI;
             EditorApplication.hierarchyWindowItemOnGUI += HierarchyWindowItemOnGUI;
-            EditorApplication.RepaintProjectWindow();
-            EditorApplication.RepaintHierarchyWindow();
         }
 
         ~FileMarkerController()
@@ -102,7 +100,7 @@ namespace FileMarker
             var fileNameWithoutExtension = Path.GetFileNameWithoutExtension(assetPath);
             var fileMarkData = _fileMarkerModel.GetFileMarkData(fileNameWithoutExtension);
             //当前已有这个key的数据 替换掉默认注释
-            if (fileMarkData != null)
+            if (fileMarkData != null && !fileMarkData.mark.Trim().Equals(""))
             {
                 tempMark = fileMarkData.mark;
             }

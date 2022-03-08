@@ -12,4 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a847db678b2a46f790ae9d8553b93342, type: 3}
   m_Name: DataFile
   m_EditorClassIdentifier: 
-  fileMarkerDataList: []
+  fileMarkerDataList:
+  - assetName: FileMarkerDef
+    mark: 
+  - assetName: FileMarkerData
+    mark: '  '

@@ -16,7 +16,7 @@ MonoBehaviour:
   - assetName: FileMarkerDef
     mark: 
   - assetName: FileMarkerData
-    mark: //
+    mark: 
   - assetName: FileMarkerModel
     mark: //
   - assetName: UILogic
@@ -24,4 +24,20 @@ MonoBehaviour:
   - assetName: FileMarkerController
     mark: 
   - assetName: FileMarker
-    mark: "\u5996\u68A6"
+    mark: 
+  - assetName: Scripts
+    mark: 
+  - assetName: Logic
+    mark: //
+  - assetName: Core
+    mark: //
+  - assetName: FileMarkerUtil
+    mark: //
+  - assetName: Util
+    mark: //
+  - assetName: GameObject
+    mark: "\u7269\u4F53"
+  - assetName: BattleLogic
+    mark: //
+  - assetName: AI
+    mark: 

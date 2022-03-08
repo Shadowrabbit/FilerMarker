@@ -85,7 +85,7 @@ namespace FileMarker
             }
 
             var rect = new Rect(selectionRect.x, selectionRect.y, selectionRect.width, selectionRect.height);
-            GUI.Label(rect, fileMarkData.mark, HierarchyStyle);
+            EditorGUI.LabelField(rect, fileMarkData.mark, HierarchyStyle);
         }
 
         private static void ProjectWindowItemOnGUI(string guid, Rect selectionRect)
@@ -107,7 +107,7 @@ namespace FileMarker
 
             var rect = CalcTextFieldRect(selectionRect, tempMark);
             GUI.changed = false;
-            tempMark = GUI.TextField(rect, tempMark,
+            tempMark = EditorGUI.TextField(rect, tempMark,
                 tempMark.Equals(FileMarkerDef.DefaultMark) ? ProjectWaitMarkStyle : ProjectMarkedStyle);
             //显示层在内存创建临时数据 只有文本被编辑才会序列化 减少存储量
             if (!GUI.changed)

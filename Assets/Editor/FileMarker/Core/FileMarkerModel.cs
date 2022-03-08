@@ -23,11 +23,6 @@ namespace FileMarker
             Fetch();
         }
 
-        private void OnValidate()
-        {
-            //Fetch();
-        }
-
         private void Reset()
         {
             _dict?.Clear();

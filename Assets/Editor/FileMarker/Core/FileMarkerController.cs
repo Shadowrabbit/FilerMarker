@@ -60,9 +60,9 @@ namespace FileMarker
             if (!Directory.Exists(FileMarkerDef.DataFileFolder))
                 Directory.CreateDirectory(FileMarkerDef.DataFileFolder);
             //创建资源实例
-            var fileMarkerData = CreateInstance<FileMarkerModel>();
+            _fileMarkerModel = CreateInstance<FileMarkerModel>();
             //创建资源
-            AssetDatabase.CreateAsset(fileMarkerData, FileMarkerDef.DataFilePath);
+            AssetDatabase.CreateAsset(_fileMarkerModel, FileMarkerDef.DataFilePath);
             AssetDatabase.Refresh();
             Debug.Log("FileMarker 数据文件已创建");
         }

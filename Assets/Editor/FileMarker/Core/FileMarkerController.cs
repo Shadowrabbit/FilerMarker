@@ -67,6 +67,11 @@ namespace FileMarker
 
         private static void HierarchyWindowItemOnGUI(int instanceId, Rect selectionRect)
         {
+            if (!FileMarkerUtil.IsEnable)
+            {
+                return;
+            }
+
             if (_fileMarkerModel == null)
             {
                 return;
@@ -90,6 +95,11 @@ namespace FileMarker
 
         private static void ProjectWindowItemOnGUI(string guid, Rect selectionRect)
         {
+            if (!FileMarkerUtil.IsEnable)
+            {
+                return;
+            }
+
             if (_fileMarkerModel == null)
             {
                 return;

@@ -13,31 +13,7 @@ MonoBehaviour:
   m_Name: DataFile
   m_EditorClassIdentifier: 
   fileMarkerDataList:
-  - assetName: FileMarkerDef
-    mark: 
-  - assetName: FileMarkerData
-    mark: 
-  - assetName: FileMarkerModel
-    mark: //
-  - assetName: UILogic
-    mark: //
-  - assetName: FileMarkerController
-    mark: 
   - assetName: FileMarker
-    mark: 
-  - assetName: Scripts
-    mark: 
-  - assetName: Logic
-    mark: //
-  - assetName: Core
-    mark: //
-  - assetName: FileMarkerUtil
-    mark: //
-  - assetName: Util
-    mark: //
-  - assetName: GameObject
-    mark: "\u7269\u4F53"
-  - assetName: BattleLogic
-    mark: //
-  - assetName: AI
-    mark: 
+    mark: "\u6587\u4EF6\u6CE8\u91CA\u5668"
+  - assetName: New Folder
+    mark: "\u6D4B\u8BD5"

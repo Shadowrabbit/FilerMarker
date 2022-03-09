@@ -18,6 +18,55 @@ namespace FileMarker
 {
     public static class FileMarkerUtil
     {
+        public static bool IsEnable
+        {
+            get => EditorPrefs.GetBool(FileMarkerDef.SwitchKey);
+            private set
+            {
+                EditorPrefs.SetBool(FileMarkerDef.SwitchKey, value);
+                EditorApplication.RepaintProjectWindow();
+                EditorApplication.RepaintHierarchyWindow();
+            }
+        }
+
+        /// <summary>
+        /// 设置启用
+        /// </summary>
+        [MenuItem("FileMarker/Enable")]
+        private static void SetEnable()
+        {
+            IsEnable = true;
+        }
+
+        /// <summary>
+        /// 设置禁用
+        /// </summary>
+        [MenuItem("FileMarker/Disable")]
+        private static void SetDisable()
+        {
+            IsEnable = false;
+        }
+
+        /// <summary>
+        /// 启用按钮状态
+        /// </summary>
+        /// <returns></returns>
+        [MenuItem("FileMarker/Enable", true)]
+        private static bool EnableCheck()
+        {
+            return !IsEnable;
+        }
+
+        /// <summary>
+        /// 禁用按钮状态
+        /// </summary>
+        /// <returns></returns>
+        [MenuItem("FileMarker/Disable", true)]
+        private static bool DisableCheck()
+        {
+            return IsEnable;
+        }
+
         [MenuItem("FileMarker/CleanData")]
         private static void Clean()
         {

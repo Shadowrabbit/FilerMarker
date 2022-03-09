@@ -13,6 +13,7 @@ namespace FileMarker
 {
     public static class FileMarkerDef
     {
+        public const string SwitchKey = "FileMarkerSwitch";
         public const string DataFilePath = "Assets/Editor/FileMarker/Assets/DataFile.asset"; //数据文件路径
         public const string DataFileFolder = "Assets/Editor/FileMarker/Assets/"; //数据文件目录
         public const string DefaultMark = "//"; //默认注释
